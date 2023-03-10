@@ -1,0 +1,17 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-python.isort"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+            "installCudnn": true,
+            "cudaVersion": "11.7"
+        }
+    }
+}
