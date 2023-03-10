@@ -11,7 +11,10 @@
     "features": {
         "ghcr.io/devcontainers/features/nvidia-cuda:1": {
             "installCudnn": true,
-            "cudaVersion": "11.7"
-        }
-    }
+            "cudaVersion": "11.7",
+            "cudnnVersion": "8.5.0.96"
+        },
+        "ghcr.io/devcontainers/features/python:1": {}
+    },
+    "postCreateCommand": "pip3 install --user -r requirements.txt"
 }
