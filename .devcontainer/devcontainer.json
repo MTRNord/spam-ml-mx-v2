@@ -1,5 +1,9 @@
 {
     "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "runArgs": [
+        "--gpus",
+        "all"
+    ],
     "hostRequirements": {
         "cpus": 4
     },
@@ -16,6 +20,7 @@
     "features": {
         "ghcr.io/devcontainers/features/nvidia-cuda:1": {
             "installCudnn": true,
+            "installNvtx": true,
             "cudaVersion": "11.7",
             "cudnnVersion": "8.5.0.96"
         }
