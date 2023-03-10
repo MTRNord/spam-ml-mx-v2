@@ -1,4 +1,9 @@
 {
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+        "cpus": 4
+    },
+    "waitFor": "onCreateCommand",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -15,5 +20,6 @@
             "cudnnVersion": "8.5.0.96"
         }
     },
-    "postCreateCommand": "python3 -m pip install --user -r requirements.txt"
+    "postCreateCommand": "",
+    "updateContentCommand": "python3 -m pip install --user -r requirements.txt"
 }
