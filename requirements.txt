@@ -3,3 +3,6 @@ torchaudio
 torchvision
 fastai
 numpy
+ipykernel
+ipywidgets
+tensorboard
